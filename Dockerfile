@@ -1,9 +1,3 @@
-FROM ubuntu:latest
-LABEL maintainer="Wadas"
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install apache2 -y
-VOLUME /var/www/html
-COPY index.html /var/www/html
-EXPOSE 80
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+FROM nginx:1.12-alpine
+LABEL maintainer="mw"
+CMD ["echo", "Hello World"]
