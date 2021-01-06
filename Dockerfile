@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nginx:latest
 LABEL maintainer="Maciej WAdas"
 RUN apt-get update -y
 RUN apt-get upgrade -y
